@@ -1,0 +1,15 @@
+vlan 4
+  name Vlan4
+vlan 5
+  name Vlan5
+!
+{% for int, data in interface_accessport.items() %}
+{% if host_name == data.hostname %}
+interface {{int}}
+  switchport mode {{data.mode}}
+  switchport access vlan {{data.vlan}}
+  media-type rj45
+  negotiation auto
+{% endif %}
+{% endfor %}
+!

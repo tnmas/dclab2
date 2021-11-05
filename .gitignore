@@ -1,0 +1,6 @@
+nornir_lab/nornir.log
+nornir_lab/__pycache__
+nornir_lab/get-pip.py
+test.py
+output_file
+nornir_lab/templates/test.j2
